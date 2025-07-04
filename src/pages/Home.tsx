@@ -83,7 +83,7 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white min-h-screen flex items-center">
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{

@@ -14,6 +14,7 @@ import {
   Star,
   MapPin
 } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Home = () => {
   const services = [
@@ -80,7 +81,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+            backgroundImage: `url(${heroBackground})`
           }}
         ></div>
         <div className="relative container mx-auto px-4 text-center">

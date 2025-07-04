@@ -104,7 +104,7 @@ const Home = () => {
                 CALL NOW
               </a>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-gray-900">
+            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-lg px-8 py-4">
               <a href="sms:+263782842888">
                 <MessageSquare className="mr-2 h-5 w-5" />
                 TEXT US

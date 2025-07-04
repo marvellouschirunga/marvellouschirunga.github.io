@@ -61,7 +61,7 @@ const Home = () => {
         backgroundImage: `radial-gradient(circle at top left, rgba(40, 40, 40, 0.79) 1%, rgba(102, 102, 102, 0.48) 100%), url(${heroBackground})`
       }}></div>
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6">PASSION PERFORMANCE</h1>
+          <h1 className="font-rubik font-bold uppercase text-[64px] leading-[1.1em] mb-6">PASSION PERFORMANCE</h1>
           <p className="text-xl lg:text-2xl mb-8 text-gray-200">
             Your Harare Hybrid Electric Auto Repair Shop For Over 5 Years
           </p>

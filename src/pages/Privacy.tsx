@@ -12,7 +12,7 @@ const Privacy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-muted-foreground">
-              At Passion Auto Services, we are committed to protecting your privacy and personal information. 
+              At Passion Performance Services, we are committed to protecting your privacy and personal information. 
               This Privacy Policy explains how we collect, use, and safeguard your information when you visit 
               our website or use our services.
             </p>
@@ -115,7 +115,7 @@ const Privacy = () => {
               If you have any questions about this Privacy Policy or our data practices, please contact us:
             </p>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <p className="font-medium mb-2">Passion Auto Services</p>
+              <p className="font-medium mb-2">Passion Performance Services</p>
               <p className="text-muted-foreground">19303 Borrowdale Rd, Gunhill, Harare</p>
               <p className="text-muted-foreground">Phone: +263 782 842 888</p>
               <p className="text-muted-foreground">Email: info@passionauto.co.zw</p>

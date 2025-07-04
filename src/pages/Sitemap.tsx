@@ -43,7 +43,7 @@ const Sitemap = () => {
         <h1 className="text-4xl font-bold mb-8">Sitemap</h1>
         
         <p className="text-muted-foreground mb-12">
-          Navigate through all pages and services available on the Passion Auto Services website.
+          Navigate through all pages and services available on the Passion Performance Services website.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

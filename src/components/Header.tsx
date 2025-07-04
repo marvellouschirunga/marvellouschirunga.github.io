@@ -49,7 +49,7 @@ const Header = () => {
                 <Car className="h-8 w-8 text-primary-foreground" />
               </div>
               <div>
-                <div className="text-xl font-bold text-foreground">PASSION AUTO</div>
+                <div className="text-xl font-bold text-foreground">PASSION PERFORMANCE</div>
                 <div className="text-sm text-muted-foreground">SERVICES</div>
               </div>
             </Link>

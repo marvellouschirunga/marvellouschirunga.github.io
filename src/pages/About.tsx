@@ -34,7 +34,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-16 lg:py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">About Passion Auto Services</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">About Passion Performance Services</h1>
           <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto">
             Harare's trusted hybrid electric auto repair specialists, committed to excellence since 2019
           </p>
@@ -65,14 +65,14 @@ const About = () => {
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-muted-foreground mb-6">
-                Founded in 2019, Passion Auto Services began with a simple mission: to provide Harare with 
+                Founded in 2019, Passion Performance Services began with a simple mission: to provide Harare with 
                 the most reliable and professional hybrid electric vehicle repair services. As Zimbabwe's 
                 automotive landscape evolved with more hybrid vehicles, we saw the need for specialized expertise.
               </p>
               <p className="text-muted-foreground mb-6">
                 Our founder, a certified automotive technician with over a decade of experience, recognized 
                 that traditional auto repair shops weren't equipped to handle the complex electrical systems 
-                in modern hybrid vehicles. This gap in the market inspired the creation of Passion Auto Services.
+                in modern hybrid vehicles. This gap in the market inspired the creation of Passion Performance Services.
               </p>
               <p className="text-muted-foreground mb-8">
                 Today, we're proud to be Harare's leading hybrid electric auto repair specialists, with a 
@@ -183,7 +183,7 @@ const About = () => {
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            Experience the Passion Auto Difference
+            Experience the Passion Performance Difference
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Schedule your service today and see why we're Harare's trusted choice for hybrid auto repair

@@ -91,7 +91,7 @@ const Home = () => {
         ></div>
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-            PASSION AUTO SERVICES
+            PASSION PERFORMANCE SERVICES
           </h1>
           <p className="text-xl lg:text-2xl mb-8 text-gray-200">
             Your Harare Hybrid Electric Auto Repair Shop For Over 5 Years
@@ -121,7 +121,7 @@ const Home = () => {
               Harare Hybrid Electric Auto Repair Services
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Rely On Passion Auto For Fast & Reliable Auto Repairs!
+              Rely On Passion Performance For Fast & Reliable Auto Repairs!
             </p>
           </div>
           
@@ -179,13 +179,13 @@ const Home = () => {
               
               <div className="space-y-6 text-gray-600">
                 <p className="leading-relaxed">
-                  At Passion Auto Services, we are committed to providing complete auto repair services 
+                  At Passion Performance Services, we are committed to providing complete auto repair services 
                   that are both highly dependable and budget-friendly. You can rely on us to give your car, truck, or 
                   SUV the care it needs.
                 </p>
                 
                 <p className="leading-relaxed">
-                  The auto repair technicians at Passion Auto Services are certified by the National 
+                  The auto repair technicians at Passion Performance Services are certified by the National 
                   Institute for Automotive Service Excellence. Additionally, we have also been trained and certified through 
                   several car manufacturers to do repairs on their particular make and model of cars.
                 </p>
@@ -200,7 +200,7 @@ const Home = () => {
 
               <div className="mt-12">
                 <p className="text-gray-600 mb-4">
-                  For a dependable auto repair center in Harare, rely on Passion Auto Services to provide exceptional service at 
+                  For a dependable auto repair center in Harare, rely on Passion Performance Services to provide exceptional service at 
                   competitive rates. Some of the auto services we provide include:
                 </p>
                 

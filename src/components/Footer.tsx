@@ -13,7 +13,7 @@ const Footer = () => {
                 <Car className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <div className="text-lg font-bold">PASSION AUTO</div>
+                <div className="text-lg font-bold">PASSION PERFORMANCE</div>
                 <div className="text-sm text-gray-400">SERVICES</div>
               </div>
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2024 Passion Auto Services. All rights reserved.</p>
+            <p>&copy; 2024 Passion Performance Services. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
               <Link to="/sitemap" className="hover:text-white transition-colors">Sitemap</Link>

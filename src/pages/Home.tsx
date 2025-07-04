@@ -2,51 +2,57 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Wrench, 
-  Car, 
-  Battery, 
-  Check, 
-  AirVent, 
   Phone,
   MessageSquare,
   Clock,
   Shield,
   Star,
-  MapPin
+  MapPin,
+  Check
 } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
+import generalAutoRepairs from "@/assets/general-auto-repairs.jpg";
+import brakeServices from "@/assets/brake-services.jpg";
+import oilChange from "@/assets/oil-change.jpg";
+import tuneUps from "@/assets/tune-ups.jpg";
+import suspensionShocks from "@/assets/suspension-shocks.jpg";
+import exhaustSystem from "@/assets/exhaust-system.jpg";
+import acRepair from "@/assets/ac-repair.jpg";
+import checkEngine from "@/assets/check-engine.jpg";
 
 const Home = () => {
   const services = [
     {
-      icon: Car,
-      title: "HYBRID DIAGNOSTICS",
-      description: "Advanced diagnostic services for hybrid vehicles using state-of-the-art equipment."
+      image: generalAutoRepairs,
+      title: "GENERAL AUTO REPAIRS"
     },
     {
-      icon: Wrench,
-      title: "GENERAL AUTO REPAIRS",
-      description: "Complete automotive repair services for all makes and models."
+      image: brakeServices,
+      title: "BRAKES"
     },
     {
-      icon: Battery,
-      title: "INVERTER REPAIRS",
-      description: "Specialized inverter repair and replacement services for hybrid vehicles."
+      image: oilChange,
+      title: "OIL CHANGE"
     },
     {
-      icon: AirVent,
-      title: "AC REPAIR/RECHARGE",
-      description: "Professional air conditioning repair and recharge services."
+      image: tuneUps,
+      title: "TUNE-UPS"
     },
     {
-      icon: Wrench,
-      title: "EXHAUST SYSTEMS",
-      description: "Complete exhaust system inspection, repair, and replacement."
+      image: suspensionShocks,
+      title: "SUSPENSION & SHOCKS"
     },
     {
-      icon: Check,
-      title: "CHECK ENGINE LIGHT",
-      description: "Comprehensive engine diagnostics and check engine light solutions."
+      image: exhaustSystem,
+      title: "EXHAUST"
+    },
+    {
+      image: acRepair,
+      title: "AC REPAIR/RECHARGE"
+    },
+    {
+      image: checkEngine,
+      title: "CHECK ENGINE LIGHT"
     }
   ];
 
@@ -120,17 +126,25 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {services.map((service, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-8">
-                  <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <service.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
+              <div 
+                key={index} 
+                className="relative aspect-square rounded-lg overflow-hidden group cursor-pointer"
+              >
+                <div 
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${service.image})`
+                  }}
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
+                <div className="absolute inset-0 flex items-center justify-center p-4">
+                  <h3 className="text-white font-bold text-center text-sm md:text-base lg:text-lg">
+                    {service.title}
+                  </h3>
+                </div>
+              </div>
             ))}
           </div>
         </div>

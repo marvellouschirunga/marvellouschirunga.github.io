@@ -149,54 +149,127 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Value Propositions */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {valueProps.map((prop, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <prop.icon className="h-8 w-8 text-primary" />
+      {/* Value Propositions & About Combined Section */}
+      <section className="py-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          {/* Left Red Panel */}
+          <div className="bg-primary text-primary-foreground p-16">
+            <div className="space-y-12">
+              {valueProps.map((prop, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="text-3xl font-bold mt-1">&gt;&gt;</div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-4">{prop.title}</h3>
+                    <p className="text-sm leading-relaxed opacity-90">
+                      {prop.description}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold mb-3">{prop.title}</h3>
-                <p className="text-muted-foreground text-sm">{prop.description}</p>
+              ))}
+            </div>
+          </div>
+
+          {/* Right White Panel */}
+          <div className="bg-white p-16">
+            <div className="max-w-lg">
+              <h2 className="text-4xl font-bold mb-6 text-gray-800">
+                YOUR LOCAL AUTO REPAIR SHOP
+              </h2>
+              <div className="w-16 h-1 bg-primary mb-8"></div>
+              
+              <div className="space-y-6 text-gray-600">
+                <p className="leading-relaxed">
+                  At Passion Auto Services, we are committed to providing complete auto repair services 
+                  that are both highly dependable and budget-friendly. You can rely on us to give your car, truck, or 
+                  SUV the care it needs.
+                </p>
+                
+                <p className="leading-relaxed">
+                  The auto repair technicians at Passion Auto Services are certified by the National 
+                  Institute for Automotive Service Excellence. Additionally, we have also been trained and certified through 
+                  several car manufacturers to do repairs on their particular make and model of cars.
+                </p>
+                
+                <p className="leading-relaxed">
+                  Our experienced auto repair experts will perform extensive inspections, 
+                  tune-ups, and repair services to ensure the safety and performance of your 
+                  vehicle. Our experienced auto repair center will get you safely back on the 
+                  open road as soon as possible!
+                </p>
               </div>
-            ))}
+
+              <div className="mt-12">
+                <p className="text-gray-600 mb-4">
+                  For a dependable auto repair center in Harare, rely on Passion Auto Services to provide exceptional service at 
+                  competitive rates. Some of the auto services we provide include:
+                </p>
+                
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Air-conditioning
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Exterior and interior lights
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Cooling system
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Batteries and engine parts
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Oil and fluid levels
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Brakes and suspension
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Exhaust and fuel systems
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    Steering and suspension
+                  </li>
+                </ul>
+
+                <div className="mt-8">
+                  <p className="text-gray-600 mb-2">Get a quote by contacting us today at</p>
+                  <a href="tel:+263782842888" className="text-primary font-bold text-lg hover:underline">
+                    +263 782 842 888
+                  </a>
+                  <span className="text-gray-600"> or fill out our online quote form!</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Bottom CTA Section */}
+      <section className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Your Local Auto Repair Shop
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                At Passion Auto Services, we are committed to providing complete hybrid electric auto repair services 
-                that are both highly dependable and budget-friendly. You can rely on us to give your car, truck, or SUV the care it needs.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                Our auto repair technicians are certified specialists in hybrid vehicle systems. Additionally, we have 
-                been trained and certified through several car manufacturers to do repairs on their particular make and model of cars.
-              </p>
-              <p className="text-muted-foreground mb-8">
-                Our experienced auto repair experts will perform extensive inspections, tune-ups, and repair services 
-                to ensure the safety and performance of your vehicle. Our experienced auto repair center will get you 
-                safely back on the open road as soon as possible!
-              </p>
-              <Button asChild size="lg">
-                <Link to="/about">Learn More About Us</Link>
-              </Button>
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            <div className="text-center lg:text-left">
+              <a href="tel:+263782842888" className="text-4xl font-bold hover:text-primary transition-colors">
+                +263 782 842 888
+              </a>
             </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Professional auto repair technician working on hybrid vehicle"
-                className="rounded-2xl shadow-lg"
-              />
+            <div>
+              <Button 
+                asChild 
+                size="lg" 
+                variant="outline" 
+                className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold"
+              >
+                <Link to="/quote">ONLINE QUOTE FORM</Link>
+              </Button>
             </div>
           </div>
         </div>

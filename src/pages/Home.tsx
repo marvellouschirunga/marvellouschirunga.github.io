@@ -1,15 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Phone,
-  MessageSquare,
-  Clock,
-  Shield,
-  Star,
-  MapPin,
-  Check
-} from "lucide-react";
+import { Phone, MessageSquare, Clock, Shield, Star, MapPin, Check } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import generalAutoRepairs from "@/assets/general-auto-repairs.jpg";
 import brakeServices from "@/assets/brake-services.jpg";
@@ -19,80 +11,57 @@ import suspensionShocks from "@/assets/suspension-shocks.jpg";
 import exhaustSystem from "@/assets/exhaust-system.jpg";
 import acRepair from "@/assets/ac-repair.jpg";
 import checkEngine from "@/assets/check-engine.jpg";
-
 const Home = () => {
-  const services = [
-    {
-      image: generalAutoRepairs,
-      title: "GENERAL AUTO REPAIRS"
-    },
-    {
-      image: brakeServices,
-      title: "BRAKES"
-    },
-    {
-      image: oilChange,
-      title: "OIL CHANGE"
-    },
-    {
-      image: tuneUps,
-      title: "TUNE-UPS"
-    },
-    {
-      image: suspensionShocks,
-      title: "SUSPENSION & SHOCKS"
-    },
-    {
-      image: exhaustSystem,
-      title: "EXHAUST"
-    },
-    {
-      image: acRepair,
-      title: "AC REPAIR/RECHARGE"
-    },
-    {
-      image: checkEngine,
-      title: "CHECK ENGINE LIGHT"
-    }
-  ];
-
-  const valueProps = [
-    {
-      icon: Clock,
-      title: "Fast & Friendly Service",
-      description: "We understand how inconvenient car problems can be. That's why we offer fast and reliable services to get you on the road as quickly as possible."
-    },
-    {
-      icon: Star,
-      title: "Competitive Auto Repair Quotes",
-      description: "We are committed to providing complete auto repair services that are both highly dependable and budget-friendly."
-    },
-    {
-      icon: Shield,
-      title: "Expert Auto Repair Technicians",
-      description: "Our auto repair technicians are experienced & highly trained, with specialized certification in hybrid vehicle systems."
-    },
-    {
-      icon: Check,
-      title: "Quality Services & Repairs",
-      description: "We provide quality inspections, tune-ups, and repair services to ensure the safety and performance of your vehicle."
-    }
-  ];
-
-  return (
-    <div>
+  const services = [{
+    image: generalAutoRepairs,
+    title: "GENERAL AUTO REPAIRS"
+  }, {
+    image: brakeServices,
+    title: "BRAKES"
+  }, {
+    image: oilChange,
+    title: "OIL CHANGE"
+  }, {
+    image: tuneUps,
+    title: "TUNE-UPS"
+  }, {
+    image: suspensionShocks,
+    title: "SUSPENSION & SHOCKS"
+  }, {
+    image: exhaustSystem,
+    title: "EXHAUST"
+  }, {
+    image: acRepair,
+    title: "AC REPAIR/RECHARGE"
+  }, {
+    image: checkEngine,
+    title: "CHECK ENGINE LIGHT"
+  }];
+  const valueProps = [{
+    icon: Clock,
+    title: "Fast & Friendly Service",
+    description: "We understand how inconvenient car problems can be. That's why we offer fast and reliable services to get you on the road as quickly as possible."
+  }, {
+    icon: Star,
+    title: "Competitive Auto Repair Quotes",
+    description: "We are committed to providing complete auto repair services that are both highly dependable and budget-friendly."
+  }, {
+    icon: Shield,
+    title: "Expert Auto Repair Technicians",
+    description: "Our auto repair technicians are experienced & highly trained, with specialized certification in hybrid vehicle systems."
+  }, {
+    icon: Check,
+    title: "Quality Services & Repairs",
+    description: "We provide quality inspections, tune-ups, and repair services to ensure the safety and performance of your vehicle."
+  }];
+  return <div>
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white min-h-screen flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `radial-gradient(circle at top left, rgba(40, 40, 40, 0.79) 1%, rgba(102, 102, 102, 0.48) 100%), url(${heroBackground})`
-          }}
-        ></div>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `radial-gradient(circle at top left, rgba(40, 40, 40, 0.79) 1%, rgba(102, 102, 102, 0.48) 100%), url(${heroBackground})`
+      }}></div>
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-            PASSION PERFORMANCE SERVICES
-          </h1>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">PASSION PERFORMANCE</h1>
           <p className="text-xl lg:text-2xl mb-8 text-gray-200">
             Your Harare Hybrid Electric Auto Repair Shop For Over 5 Years
           </p>
@@ -126,25 +95,17 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {services.map((service, index) => (
-              <div 
-                key={index} 
-                className="relative aspect-square rounded-lg overflow-hidden group cursor-pointer"
-              >
-                <div 
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${service.image})`
-                  }}
-                />
+            {services.map((service, index) => <div key={index} className="relative aspect-square rounded-lg overflow-hidden group cursor-pointer">
+                <div className="absolute inset-0 bg-cover bg-center" style={{
+              backgroundImage: `url(${service.image})`
+            }} />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                 <div className="absolute inset-0 flex items-center justify-center p-4">
                   <h3 className="text-white font-bold text-center text-sm md:text-base lg:text-lg">
                     {service.title}
                   </h3>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -155,8 +116,7 @@ const Home = () => {
           {/* Left Red Panel */}
           <div className="bg-primary text-primary-foreground p-16">
             <div className="space-y-12">
-              {valueProps.map((prop, index) => (
-                <div key={index} className="flex items-start gap-4">
+              {valueProps.map((prop, index) => <div key={index} className="flex items-start gap-4">
                   <div className="text-3xl font-bold mt-1">&gt;&gt;</div>
                   <div>
                     <h3 className="text-xl font-bold mb-4">{prop.title}</h3>
@@ -164,8 +124,7 @@ const Home = () => {
                       {prop.description}
                     </p>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
@@ -262,12 +221,7 @@ const Home = () => {
               </a>
             </div>
             <div>
-              <Button 
-                asChild 
-                size="lg" 
-                variant="outline" 
-                className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold"
-              >
+              <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold">
                 <Link to="/quote">ONLINE QUOTE FORM</Link>
               </Button>
             </div>
@@ -301,8 +255,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;

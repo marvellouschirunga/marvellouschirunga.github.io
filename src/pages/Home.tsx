@@ -83,11 +83,10 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white min-h-screen flex items-center">
-        <div className="absolute inset-0 bg-black/60"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${heroBackground})`
+            backgroundImage: `radial-gradient(circle at top left, rgba(40, 40, 40, 0.79) 1%, rgba(102, 102, 102, 0.48) 100%), url(${heroBackground})`
           }}
         ></div>
         <div className="relative container mx-auto px-4 text-center">

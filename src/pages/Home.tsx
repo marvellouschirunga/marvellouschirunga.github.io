@@ -56,7 +56,29 @@ const Home = () => {
         backgroundImage: `radial-gradient(circle at top left, rgba(40, 40, 40, 0.79) 1%, rgba(102, 102, 102, 0.48) 100%), url(${heroBackground})`
       }}></div>
         <div className="relative container mx-auto px-4 text-center">
-          <h1 className="font-rubik font-bold uppercase text-[64px] leading-[1.1em] mb-6 text-foreground">PASSION PERFORMANCE</h1>
+          <h1 className="relative font-rubik font-bold uppercase text-[64px] md:text-[80px] lg:text-[96px] leading-[0.9em] mb-6 hero-title">
+            <span className="relative z-10 bg-gradient-to-r from-white via-orange-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
+              PASSION
+            </span>
+            <br />
+            <span className="relative z-10 bg-gradient-to-r from-orange-200 via-white to-orange-200 bg-clip-text text-transparent drop-shadow-2xl animate-pulse">
+              PERFORMANCE
+            </span>
+            {/* Glowing background effects */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 blur-3xl animate-pulse"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-transparent via-primary/30 to-transparent blur-2xl animate-pulse delay-500"></div>
+            {/* Decorative gears */}
+            <div className="absolute -right-8 top-4 text-primary/30 animate-spin-slow">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9l-5.18 4.18L18.18 20H12l-6.18-6.82L0 9l6.91-.74L12 2z"/>
+              </svg>
+            </div>
+            <div className="absolute -left-6 bottom-2 text-primary/20 animate-spin-slow delay-1000">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9l-5.18 4.18L18.18 20H12l-6.18-6.82L0 9l6.91-.74L12 2z"/>
+              </svg>
+            </div>
+          </h1>
           <p className="text-xl lg:text-2xl mb-8 text-gray-200">
             Your Harare Hybrid Electric Auto Repair Shop For Over 5 Years
           </p>

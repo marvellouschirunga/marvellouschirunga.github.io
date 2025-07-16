@@ -383,8 +383,8 @@ const Home = () => {
           <img 
             src={hybridWaterPumpsPromo}
             alt="Passion Performance Professional Hybrid Water Pumps Service"
-            className="w-full h-full object-cover object-center transform scale-150 hover:scale-155 transition-transform duration-700"
-            style={{ objectPosition: 'center 60%' }}
+            className="w-full h-full object-cover transform scale-[2] hover:scale-[2.1] transition-transform duration-700"
+            style={{ objectPosition: 'center 85%' }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-black/30"></div>
         </div>

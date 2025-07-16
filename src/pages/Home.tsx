@@ -3,39 +3,39 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, MessageSquare, Clock, Shield, Star, MapPin, Check } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-import generalAutoRepairs from "@/assets/general-auto-repairs.jpg";
+import hybridBatteryService from "@/assets/hybrid-battery-service.jpg";
+import engineDiagnostics from "@/assets/engine-diagnostics.jpg";
+import hondaService from "@/assets/honda-service.jpg";
+import professionalDiagnostics from "@/assets/professional-diagnostics.jpg";
+import hondaFitService from "@/assets/honda-fit-service.jpg";
 import brakeServices from "@/assets/brake-services.jpg";
-import oilChange from "@/assets/oil-change.jpg";
-import tuneUps from "@/assets/tune-ups.jpg";
-import suspensionShocks from "@/assets/suspension-shocks.jpg";
 import exhaustSystem from "@/assets/exhaust-system.jpg";
 import acRepair from "@/assets/ac-repair.jpg";
-import checkEngine from "@/assets/check-engine.jpg";
 const Home = () => {
   const services = [{
-    image: generalAutoRepairs,
-    title: "GENERAL AUTO REPAIRS"
+    image: hybridBatteryService,
+    title: "HYBRID BATTERY SERVICE"
+  }, {
+    image: engineDiagnostics,
+    title: "ENGINE DIAGNOSTICS"
+  }, {
+    image: hondaService,
+    title: "HONDA SPECIALIST"
+  }, {
+    image: professionalDiagnostics,
+    title: "PROFESSIONAL DIAGNOSTICS"
+  }, {
+    image: hondaFitService,
+    title: "HYBRID VEHICLE SERVICE"
   }, {
     image: brakeServices,
     title: "BRAKES"
-  }, {
-    image: oilChange,
-    title: "OIL CHANGE"
-  }, {
-    image: tuneUps,
-    title: "TUNE-UPS"
-  }, {
-    image: suspensionShocks,
-    title: "SUSPENSION & SHOCKS"
   }, {
     image: exhaustSystem,
     title: "EXHAUST"
   }, {
     image: acRepair,
     title: "AC REPAIR/RECHARGE"
-  }, {
-    image: checkEngine,
-    title: "CHECK ENGINE LIGHT"
   }];
   const valueProps = [{
     icon: Clock,
@@ -166,23 +166,23 @@ const Home = () => {
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Air-conditioning
+                    Hybrid battery service & diagnostics
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Exterior and interior lights
+                    Honda & Toyota hybrid specialists
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Cooling system
+                    Professional engine diagnostics
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Batteries and engine parts
+                    Air-conditioning & cooling systems
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Oil and fluid levels
+                    Oil and fluid services
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
@@ -194,7 +194,7 @@ const Home = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Steering and suspension
+                    Electrical system diagnostics
                   </li>
                 </ul>
 

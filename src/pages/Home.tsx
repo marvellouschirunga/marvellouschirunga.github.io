@@ -206,6 +206,154 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Expert Technician Showcase */}
+      <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6">
+                Expert Hybrid Battery Specialists
+              </h2>
+              <div className="w-16 h-1 bg-primary mb-6"></div>
+              <p className="text-xl mb-6 text-gray-200">
+                Our certified technicians have specialized training in hybrid vehicle systems, 
+                with hands-on experience servicing Toyota and Honda hybrid batteries.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span>Certified hybrid battery diagnostics & repair</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span>Professional battery reconditioning services</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <span>Honda & Toyota hybrid specialists</span>
+                </div>
+              </div>
+              <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90" asChild>
+                <Link to="/quote">Get Expert Assessment</Link>
+              </Button>
+            </div>
+            <div className="relative">
+              <div className="rounded-lg overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                <img 
+                  src="/lovable-uploads/32619c48-297d-4fd4-b48a-66e346b7b97f.png"
+                  alt="Expert technician working on hybrid battery"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
+                <p className="font-bold text-lg">5+ Years</p>
+                <p className="text-sm">Hybrid Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Diagnostic Warning Lights Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative order-2 lg:order-1">
+              <div className="rounded-lg overflow-hidden shadow-xl">
+                <img 
+                  src="/lovable-uploads/d3d9cd73-2ec0-4c23-9cbd-2e76ad382126.png"
+                  alt="Honda dashboard with diagnostic warning lights"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="absolute -top-6 -left-6 bg-red-500 text-white p-4 rounded-lg shadow-lg">
+                <p className="font-bold">Warning Lights?</p>
+                <p className="text-sm">We Can Help!</p>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-4xl font-bold mb-6 text-gray-800">
+                Dashboard Warning Lights Diagnosed
+              </h2>
+              <div className="w-16 h-1 bg-primary mb-6"></div>
+              <p className="text-xl mb-6 text-gray-600">
+                Don't ignore those warning lights! Our advanced diagnostic equipment can quickly 
+                identify issues in your Honda, Toyota, or any hybrid vehicle.
+              </p>
+              <div className="space-y-4 text-gray-600">
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <span>Check Engine Light diagnostics</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span>Hybrid system warning analysis</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <span>Battery & charging system alerts</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <span>Engine temperature & coolant issues</span>
+                </div>
+              </div>
+              <div className="mt-8 p-6 bg-white rounded-lg shadow-lg border-l-4 border-primary">
+                <p className="text-gray-800 font-semibold mb-2">Free Diagnostic Check</p>
+                <p className="text-gray-600">Bring your vehicle in for a complimentary diagnostic scan and consultation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Air Filter & Maintenance Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6 text-gray-800">
+            Complete Maintenance Services
+          </h2>
+          <div className="w-16 h-1 bg-primary mx-auto mb-12"></div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="space-y-6">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">Air Filter Replacement</h3>
+                <p className="text-gray-600">Clean air filters improve engine performance and fuel efficiency</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">Engine Components</h3>
+                <p className="text-gray-600">Professional inspection and replacement of worn engine parts</p>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="rounded-full overflow-hidden shadow-2xl border-8 border-primary w-80 h-80 mx-auto">
+                <img 
+                  src="/lovable-uploads/ea06f484-e3c5-4e3f-a867-6ea06f99d5f3.png"
+                  alt="Air filter maintenance service"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground px-6 py-2 rounded-full shadow-lg">
+                <span className="font-bold">Professional Service</span>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">Preventive Maintenance</h3>
+                <p className="text-gray-600">Regular maintenance keeps your vehicle running smoothly</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-4 text-gray-800">Quality Parts</h3>
+                <p className="text-gray-600">We use only genuine and high-quality replacement parts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bottom CTA Section */}
       <section className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4">

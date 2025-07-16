@@ -239,7 +239,7 @@ const Home = () => {
             Call us today for a free quote or to schedule your appointment
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" asChild className="border-white text-foreground hover:bg-white hover:text-primary">
               <a href="tel:+263782842888">
                 <Phone className="mr-2 h-5 w-5" />
                 +263 782 842 888

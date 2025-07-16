@@ -354,6 +354,37 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Special Promotion - Hybrid Water Pumps */}
+      <section className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/346458e9-7891-4f86-a631-19924b1180da.png"
+            alt="Passion Performance Hybrid Water Pumps Available"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative bg-black/20 py-16">
+          <div className="container mx-auto px-4 text-center">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
+              <h2 className="text-4xl font-bold mb-6 text-white">
+                Hybrid Water Pumps Available
+              </h2>
+              <p className="text-xl mb-8 text-white/90">
+                Professional installation and replacement service for Honda and Toyota hybrid vehicles
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+                  <a href="tel:+263782842888">Call for Quote</a>
+                </Button>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
+                  <Link to="/quote">Get Details</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bottom CTA Section */}
       <section className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4">

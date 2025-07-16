@@ -44,14 +44,12 @@ const Header = () => {
 
           {/* Center Logo */}
           <div className="flex justify-center">
-            <Link to="/" className="flex items-center space-x-3">
-              <div className="bg-primary rounded-lg p-2">
-                <Car className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <div>
-                <div className="text-xl font-bold text-foreground">PASSION PERFORMANCE</div>
-                <div className="text-sm text-muted-foreground">SERVICES</div>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/642e67d6-788d-4baf-a635-75c2bfb208d2.png"
+                alt="Passion Performance - Hybrid Excellence, Pure Passion"
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
 

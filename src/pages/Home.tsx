@@ -401,7 +401,7 @@ const Home = () => {
                 <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
                   <a href="tel:+263782842888">Call for Quote</a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
+                <Button size="lg" variant="outline" className="border-primary bg-white/90 text-primary hover:bg-primary hover:text-white font-semibold" asChild>
                   <Link to="/quote">Get Details</Link>
                 </Button>
               </div>

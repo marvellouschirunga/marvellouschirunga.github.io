@@ -3,29 +3,24 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, MessageSquare, Clock, Shield, Star, MapPin, Check } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-import hybridBatteryService from "@/assets/hybrid-battery-service.jpg";
-import engineDiagnostics from "@/assets/engine-diagnostics.jpg";
-import hondaService from "@/assets/honda-service.jpg";
-import professionalDiagnostics from "@/assets/professional-diagnostics.jpg";
-import hondaFitService from "@/assets/honda-fit-service.jpg";
 import brakeServices from "@/assets/brake-services.jpg";
 import exhaustSystem from "@/assets/exhaust-system.jpg";
 import acRepair from "@/assets/ac-repair.jpg";
 const Home = () => {
   const services = [{
-    image: hybridBatteryService,
+    image: "/lovable-uploads/f44c2ea2-528b-43ab-9612-81fb4f956ee6.png",
     title: "HYBRID BATTERY SERVICE"
   }, {
-    image: engineDiagnostics,
+    image: "/lovable-uploads/bf33478f-38a4-44ba-9c4b-af79389a1ea6.png",
     title: "ENGINE DIAGNOSTICS"
   }, {
-    image: hondaService,
+    image: "/lovable-uploads/37ba0a86-0031-4408-9b41-dfa56ed77bdc.png",
     title: "HONDA SPECIALIST"
   }, {
-    image: professionalDiagnostics,
+    image: "/lovable-uploads/458f3c18-78d0-4364-a1f5-fd76487d2f1c.png",
     title: "PROFESSIONAL DIAGNOSTICS"
   }, {
-    image: hondaFitService,
+    image: "/lovable-uploads/53b4cf0a-e302-4a79-aa6d-cc7d78fddb94.png",
     title: "HYBRID VEHICLE SERVICE"
   }, {
     image: brakeServices,

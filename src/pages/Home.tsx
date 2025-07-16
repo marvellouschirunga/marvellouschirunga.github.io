@@ -6,6 +6,7 @@ import heroBackground from "@/assets/hero-background.jpg";
 import brakeServices from "@/assets/brake-services.jpg";
 import exhaustSystem from "@/assets/exhaust-system.jpg";
 import acRepair from "@/assets/ac-repair.jpg";
+import hybridWaterPumpsPromo from "@/assets/hybrid-water-pumps-promo.jpg";
 const Home = () => {
   const services = [{
     image: "/lovable-uploads/f44c2ea2-528b-43ab-9612-81fb4f956ee6.png",
@@ -378,12 +379,13 @@ const Home = () => {
 
       {/* Special Promotion - Hybrid Water Pumps */}
       <section className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/lovable-uploads/346458e9-7891-4f86-a631-19924b1180da.png"
-            alt="Passion Performance Hybrid Water Pumps Available"
-            className="w-full h-full object-cover"
+            src={hybridWaterPumpsPromo}
+            alt="Passion Performance Professional Hybrid Water Pumps Service"
+            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40"></div>
         </div>
         <div className="relative bg-black/20 py-16">
           <div className="container mx-auto px-4 text-center">
